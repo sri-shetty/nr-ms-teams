@@ -1,0 +1,36 @@
+{
+    "@type": "MessageCard",
+    "@context": "http://schema.org/extensions",
+    "themeColor": "0076D7",
+    "summary": "POC New Relic",
+    "sections": [{
+        "activityTitle": "{{entity.name}} : {{detectionType}}",
+        "activitySubtitle": "{{category}}",
+        "facts": [{
+            "name": "type",
+            "value": "Unassigned"
+        }, {
+            "name": "name",
+            "value": "{{entity.name}}"
+        }, {
+            "name": "link",
+            "value": "{{entity.link}}"
+        }, {
+            "name": "entityGuid",
+            "value": "{{entity.entityGuid}}"
+        }, {
+            "name": "domainId",
+            "value": "{{entity.domainId}}"
+        }, {
+            "name": "accountId",
+            "value": "{{entity.accountId}}"
+        }, {
+            "name": "detectionType",
+            "value": "{{detectionType}}"
+        }, {
+            "name": "category",
+            "value": "{{category}}"
+        }],
+        "markdown": true
+    }]
+}
