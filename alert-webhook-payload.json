@@ -1,0 +1,29 @@
+{
+    "@context": "http://schema.org/extensions",
+    "@type": "MessageCard",
+    "summary": "POC New Relic",
+    "sections": [
+        {
+            "activityTitle": "{{entity.name}} : {{detectionType}}",
+            "activitySubtitle": "{{category}}",
+            "activityText": "Severity: $SEVERITY",
+            "activityImage": "<image>"
+        }
+    ],
+    "potentialAction": [
+        {
+            "@type": "OpenUri",
+            "name": "View Incident",
+            "targets": [
+                { "os": "default", "uri": "$INCIDENT_URL" }
+            ]
+        },
+        {
+            "@type": "OpenUri",
+            "name": "Acknowledge Incident",
+            "targets": [
+                { "os": "default", "uri": "$INCIDENT_ACKNOWLEDGE_URL" }
+            ]
+        }
+    ]
+  }
